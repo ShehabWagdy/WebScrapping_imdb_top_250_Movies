@@ -1,12 +1,11 @@
-# WebScrapping Multiple Pages from Website
-In this project we will show how to scrape multiple pages from website to extract information
+# In This project will descripe how to scrape movie's information of top 250 movies on IMDB website:
 
-Extracted Information:
+## Extracted Information:
 This code will extract the below information using Python Code and will save the output in CSV file:
-	1- Movie Name
-	2- Movie Rating
-	3- Year
-	4- Link
+1. Movie Name
+2. Movie Rating
+3. Year
+4. Link
 	
 ## load needed libraries
 
@@ -23,7 +22,7 @@ https://www.imdb.com/chart/top/
 ## Parse HTML Code With Beautiful Soup
 	soup = BeautifulSoup(url.content,'html.parser')
 
-## Finding needed informatiob by inspecting its HTML tag/ID:
+## Finding needed information by inspecting its HTML tag/ID:
 ## Creating empty DataFrame Headers:
 	df = pd.DataFrame(columns=['movie_name','rating','year','link'])
 
